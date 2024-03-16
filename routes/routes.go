@@ -8,4 +8,6 @@ import (
 
 func SetupRoutes(r *gin.Engine) {
 	r.POST("/test", handlers.Welcome)
+
+	r.POST("/pngconvert", handlers.JpgToPngConverter)
 }
